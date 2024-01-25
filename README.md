@@ -1,3 +1,5 @@
-# React + Vite starter template.
+# React + Vite example project of a simple calculator.
 
-This is just a simple starter app for React + Vite.
+To run:
+
+```npm start dev```
