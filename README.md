@@ -1,4 +1,5 @@
-# React + Vite example project of a simple calculator.
+# Example of a simple calculator.
+### React + Vite  + Javascript
 
 To run:
 
