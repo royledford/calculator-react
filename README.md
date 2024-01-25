@@ -1,5 +1,5 @@
 # Example of a simple calculator.
-### React + Vite  + Javascript
+### React + Vite + Typescript
 
 To run:
 

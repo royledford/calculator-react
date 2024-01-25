@@ -1,3 +1,4 @@
+import { ReactElement } from 'react'
 import PropTypes from 'prop-types'
 import styles from './Button.module.css'
 
@@ -13,10 +14,16 @@ Button.propTypes = {
 export default function Button({
   label,
   highlight = false,
+  className = '',
+  style = {},
   onClick,
-  className,
-  style,
-}) {
+}: {
+  label: string
+  highlight?: boolean | undefined
+  className?: string | undefined
+  style?: React.CSSProperties | undefined
+  onClick: any
+}): ReactElement {
   return (
     <button
       className={`${styles.button} ${
