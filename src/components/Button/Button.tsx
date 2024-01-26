@@ -1,6 +1,7 @@
 import { ReactElement } from 'react'
 import PropTypes from 'prop-types'
-import styles from './Button.module.css'
+// import styles from './Button.module.css'
+import { Button as ShadButton } from '@/components/ui/button'
 
 Button.propTypes = {
   label: PropTypes.string.isRequired,
@@ -25,13 +26,13 @@ export default function Button({
   onClick: any
 }): ReactElement {
   return (
-    <button
-      className={`${styles.button} ${
-        highlight && styles.highlight
-      } ${className}`}
-      style={style}
+    <ShadButton
+      // className={`${styles.button} ${
+      //   highlight && styles.highlight
+      // } ${className}`}
+      // style={style}
       onClick={() => onClick(label)}>
       {label}
-    </button>
+    </ShadButton>
   )
 }
